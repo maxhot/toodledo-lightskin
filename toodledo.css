@@ -1,0 +1,74 @@
+/*
+ *
+ * TODO
+ *  start github for this?
+ *
+ */
+
+@-moz-document domain('toodledo.com') {
+
+body {
+    /* Segoe UI looks nicer than Arial */
+    font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif, Georgia, Times, "Times New Roman", serif;
+}
+
+
+/* let's not make things so crammed */
+
+.taskRow.Grid .taskCell {
+    padding-left: 4px;
+    padding-top: .2em;
+    padding-bottom: .1em;
+}
+
+.taskCell.tc_title.editable {
+    font-size: 11pt;    /* balance between prominence and how much fits in column */
+    /* font-family: "Segoe UI"; */
+    color: black;
+}
+
+.taskCell.editable {
+    color: slategray;
+}
+
+.taskRowDivider {
+    /*  background-color: whitesmoke; */
+    background-color: white;
+    padding-top: .4em;
+    padding-bottom: .2em;
+    border-bottom: 1px solid #1b75bc
+}
+
+.taskRowDivider:hover,
+.taskRowDivider a:hover {
+  color:#333;
+  background-color:whitesmoke;
+  /* text-decoration: underline;  /* TODO: find something better */
+  /* font-weight: bold; /* TODO: fix this so hovering over the entire bar has effect */
+}
+
+
+.taskRowDivider a {
+    color: #1b75bc;  /* blue instead of gray */
+    font-size: 11pt;
+    font-weight: normal;
+}
+
+/* Section: Task Row Divider when closed */
+
+.taskRowDivider.closed {
+  background-color: #e8e8e8;
+  border-bottom-color: #aaa;
+  border-bottom-style:dashed;
+}
+
+.taskRowDivider.closed a {
+  color: #666;
+}
+
+
+input.cellText {
+    font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif, Georgia, Times, "Times New Roman", serif;
+}
+
+} /* END @-moz-document domain(..) */
