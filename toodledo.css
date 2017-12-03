@@ -1,19 +1,28 @@
 /*
  *
- * TODO
- *  start github for this?
+ * Features
+ *
+ * Global Font changes
+ * Task Row Breathing Room
+ * Task Row Styling
  *
  */
 
 @-moz-document domain('toodledo.com') {
 
+/* -----------------------------------------------------------------------------
+ * Section: Global Font Changes
+ */
+
 body {
-    /* Segoe UI looks nicer than Arial */
+    /* Adding Segoe UI (looks nicer than Arial) */
     font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif, Georgia, Times, "Times New Roman", serif;
 }
 
 
-/* let's not make things so crammed */
+/* -----------------------------------------------------------------------------
+ * Section: Task Row Breathing Room - let's not make things so crammed
+ */
 
 .taskRow.Grid .taskCell {
     padding-left: 4px;
@@ -21,15 +30,25 @@ body {
     padding-bottom: .1em;
 }
 
+/* -----------------------------------------------------------------------------
+ * Task Row & Title styling
+ */
 .taskCell.tc_title.editable {
     font-size: 11pt;    /* balance between prominence and how much fits in column */
     /* font-family: "Segoe UI"; */
     color: black;
 }
 
+/* Dim all columns (except title) */
+
 .taskCell.editable {
     color: slategray;
 }
+
+
+/* -----------------------------------------------------------------------------
+ * Section: Divider Styling */
+ */
 
 .taskRowDivider {
     /*  background-color: whitesmoke; */
@@ -54,7 +73,6 @@ body {
     font-weight: normal;
 }
 
-/* Section: Task Row Divider when closed */
 
 .taskRowDivider.closed {
   background-color: #e8e8e8;
@@ -71,4 +89,4 @@ input.cellText {
     font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif, Georgia, Times, "Times New Roman", serif;
 }
 
-} /* END @-moz-document domain(..) */
+}
